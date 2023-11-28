@@ -58,7 +58,7 @@
 .description {
     color: var(--description-text-color);
     font-size: var(--description-font-size);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     line-height: 140%;
 }
 
@@ -135,7 +135,7 @@ header {
 
 .nav__links {
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -145,6 +145,10 @@ header {
     background-color: var(--second-color);
     padding: 10px 30px;
 
+}
+
+.nav__links.active {
+    display: flex;
 }
 
 .nav__logo {
@@ -225,4 +229,36 @@ header {
 .hero__socials-container {
     display: flex;
     gap: 30px;
+}
+
+.our-barber {
+    background-color: #2C3639;
+    text-align: center;
+}
+
+.our-barber__header {
+    margin-bottom: 30px;
+}
+
+.our-barber__header span {
+    color: var(--third-color);
+}
+
+.our-barber__opening-hours {
+    color: var(--first-color);
+    border: 2px solid var(--third-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.our-barber__table-opening-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.our-barber__day-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
