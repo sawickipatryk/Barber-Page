@@ -262,3 +262,60 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+.priece-list {
+    background-color: #3F4E4F;
+    text-align: center;
+}
+
+.price-list__buttons-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.price-list__button {
+    background: none;
+    border: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+.price-list__price-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.price-list__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    color: var(--first-color);
+
+}
+
+.price-list__name {
+    text-transform: uppercase;
+    font-weight: var(--font-medium);
+}
+
+.price-list__box span {
+    position: relative;
+    color: var(--third-color);
+}
+
+.price-list__box span::after {
+    content: "...........................";
+    position: absolute;
+    top: 0;
+    left: -500%;
+    font-size: 20px;
+    color: var(--first-color);
+}
