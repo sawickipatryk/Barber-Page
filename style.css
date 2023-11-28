@@ -2,37 +2,29 @@
 
 :root {
 
-    --nav-button-text-color: #fff;
-    --nav-button-mobile-text-color: #000;
-    --nav-button-mobile-border-color: rgba(0, 0, 0, 0.1);
     --hero-text-color: rgba(255, 255, 255, 1);
-    --header-text-color: #000;
-    --sub-header-text-color: #FAC213;
-    --description-text-color: rgba(0, 0, 0, 0.7);
-    --button-text-color: #fff;
+    --description-text-color: #DCD7C9;
 
     --first-color: #fff;
-    --second-color: #FFF8EF;
-    --third-color: #111;
-    --button-color: #FAC213;
+    --second-color: #111;
+    --third-color: #A27B5C;
 
-    --navbar-background-color: transparent;
-    --navbar-mobile-background-color: rgba(255, 255, 255, 1);
-    --footer-background-color: rgba(255, 255, 255, 1);
+    --button-color: #A27B5C;
+    --button-text-color: #fff;
+
+    --nav-background-color: rgba(0, 0, 0, 0.9);
     --gradient-background-color: rgba(0, 0, 0, 0.8);
+    --first-background-color: #2C3639;
+    --second-background-color: #2C3639;
+    --footer-background-color: #111;
 
-    --border-offer-box-color: rgba(0, 0, 0, 0.2);
     --shadow-border-arrow-color: rgba(0, 0, 0, 0.35);
 
     --body-font: 'Rubik', sans-serif;
-    --second-font: 'Delius Unicase', cursive;
 
     --header-font-size: 30px;
-    --sub-header-font-size: 22px;
     --description-font-size: 17px;
     --nav-font-size: 22px;
-    --nav-mobile-font-size: 19px;
-    --fast-chooise-mobile-font-size: 35px;
 
     --font-regular: 400;
     --font-medium: 500;
@@ -59,19 +51,8 @@
 .header {
     color: var(--header-text-color);
     font-size: var(--header-font-size);
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-}
-
-.sub-header {
-    color: var(--sub-header-text-color);
-    font-size: var(--sub-header-font-size);
-    font-family: var(--second-font);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    font-weight: var(--font-bold);
 }
 
 .description {
