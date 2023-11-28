@@ -13,7 +13,7 @@
     --button-text-color: #fff;
 
     --nav-background-color: rgba(0, 0, 0, 0.9);
-    --gradient-background-color: rgba(0, 0, 0, 0.8);
+    --gradient-background-color: rgba(0, 0, 0, 0.6);
     --first-background-color: #2C3639;
     --second-background-color: #2C3639;
     --footer-background-color: #111;
@@ -49,7 +49,7 @@
 }
 
 .header {
-    color: var(--header-text-color);
+    color: var(--hero-text-color);
     font-size: var(--header-font-size);
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -87,10 +87,115 @@ img {
 
 li {
     list-style: none;
+    color: var(--first-color);
 }
 
 a {
     text-decoration: none;
     display: inline-block;
     color: var(--first-color);
+}
+
+header {
+    position: relative;
+    background-image: url(./assets/img/backgroundHeader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.header__gradient {
+    position: absolute;
+    background-color: var(--gradient-background-color);
+    height: calc(100% - 60px);
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.nav__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.nav__links {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-color);
+    z-index: var(--z-fixed);
+    padding: 10px 30px;
+}
+
+.nav__logo {
+    width: 100%;
+    text-align: center;
+}
+
+.nav__logo img {
+    width: 120px;
+}
+
+.toggle__menu {
+    border: none;
+    background: none;
+    color: var(--first-color);
+}
+
+
+.nav__item--parent {
+    cursor: default;
+}
+
+.nav__link-item {
+    width: 100%;
+}
+
+.nav__link,
+.nav__item--parent {
+    padding: 25px 0px;
+    width: 100%;
+}
+
+.nav__item--parent .nav__link {
+    width: 75%;
+}
+
+.nav__links .gold {
+    background-color: var(--button-color);
+}
+
+.nav__sublist {
+    display: none;
+    background-color: var(--second-color);
+    height: 200px;
+    visibility: hidden;
+    opacity: 0;
+    margin: 30px;
+}
+
+.nav__item--parent:hover>.nav__sublist {
+    display: block;
+    max-height: 200px;
+    visibility: visible;
+    opacity: 1;
 }
