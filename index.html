@@ -22,6 +22,7 @@
 <body>
 
     <header>
+        <div class="header__gradient"></div>
         <nav class="nav__container">
             <div class="nav__bar">
                 <ul class="nav__links">
@@ -31,37 +32,40 @@
                             class="nav__link"
                         >HOME</a>
                     </li>
-                    <li class="nav__link-item">
-                        <div>
-                            PAGES
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 32 32"
-                            >
-                                <path
-                                    fill="currentColor"
-                                    d="M8.037 11.166L14.5 22.36c.825 1.43 2.175 1.43 3 0l6.463-11.195c.826-1.43.15-2.598-1.5-2.598H9.537c-1.65 0-2.326 1.17-1.5 2.6z"
-                                />
-                            </svg>
-                        </div>
-                        <ul>
-                            <li><a href="about.html"></a>ABOUT</li>
-                            <li><a href="gallery.html"></a>GALLERY</li>
-                            <li><a href="staff.html"></a>STAFF</li>
+                    <li class="nav__link-item nav__item--parent">
+                        PAGES
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 32 32"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M8.037 11.166L14.5 22.36c.825 1.43 2.175 1.43 3 0l6.463-11.195c.826-1.43.15-2.598-1.5-2.598H9.537c-1.65 0-2.326 1.17-1.5 2.6z"
+                            />
+                        </svg>
+                        <ul class="nav__sublist">
+                            <li class="nav__link-item">
+                                <a
+                                    class="nav__link"
+                                    href="about.html"
+                                >ABOUT </a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a
+                                    class="nav__link"
+                                    href="gallery.html"
+                                >GALLERY </a>
+                            </li>
+                            <li class="nav__link-item">
+                                <a
+                                    class="nav__link"
+                                    href="staff.html"
+                                >STAFF </a>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-                <a
-                    href="index.html"
-                    class="nav__logo"
-                >
-                    <img
-                        src="./assets/img/logo.png"
-                        alt="logo"
-                    ></a>
-                <ul class="nav__links">
                     <li class="nav__link-item">
                         <a
                             href="contact.html"
@@ -75,6 +79,14 @@
                         >APOINTMENT</a>
                     </li>
                 </ul>
+                <a
+                    href="index.html"
+                    class="nav__logo"
+                >
+                    <img
+                        src="./assets/img/logo.png"
+                        alt="logo"
+                    ></a>
                 <button class="toggle__menu">
                     <svg
                         class="toggle__icon"
@@ -92,8 +104,8 @@
                 </button>
             </div>
         </nav>
+
         <div class="hero">
-            <div class="hero__gradient"></div>
             <div class="hero__text-container">
                 <h1 class="hero__header header">We Will Create Your Best Image</h1>
                 <p class="hero__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -159,6 +171,7 @@
             </div>
         </div>
     </header>
+
     <main></main>
     <footer></footer>
 
