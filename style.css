@@ -42,9 +42,12 @@
     font-family: var(--body-font)
 }
 
+section {
+    padding: 30px 10px 15px 10px;
+}
+
 .container {
     max-width: 1296px;
-    padding: 30px 10px 15px 10px;
     margin: 0 auto;
 }
 
@@ -107,9 +110,10 @@ header {
 
 .header__gradient {
     position: absolute;
-    background-color: var(--gradient-background-color);
-    height: calc(100% - 60px);
-    top: 60px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, var(--first-background-color) 0%, rgba(1, 1, 1, 0.4) 100%);
+    height: 100%;
+    top: 0;
     left: 0;
     width: 100%;
 }
@@ -119,8 +123,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: auto;
     z-index: var(--z-fixed);
+    background-color: var(--nav-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav__bar {
@@ -128,9 +136,9 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--nav-background-color);
     padding: 0px 10px;
     height: 100%;
+    max-width: 1296px
 }
 
 .nav__links {
@@ -351,6 +359,8 @@ header {
 .photos {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 0px;
 }
 
 .photos__img-second-row {
@@ -384,10 +394,209 @@ header {
     margin-right: 30px;
 }
 
-/* desktop  */
-/* .nav__item--parent:hover>.nav__sublist {
-    display: block;
-    max-height: 200px;
-    visibility: visible;
-    opacity: 1;
-} */
+@media screen and (min-width:768px) {
+    .container {
+        padding: 35px 15px 35px 15px;
+    }
+
+    .our-barber__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .our-barber__left-container,
+    .our-barber__right-container {
+        width: 50%;
+    }
+
+    .our-barber__description {
+        text-align: start;
+        width: 90%;
+        margin: 0;
+    }
+
+    .price-list__price-list-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .price-list__box {
+        width: 45%;
+        margin: 0;
+    }
+
+    .our-services__container {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .our-services__service {
+        width: 45%;
+    }
+
+    .photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .photos__img-second-row {
+        display: block;
+        width: 33.333%;
+    }
+
+    .photos__img {
+        width: 33.333%;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer__socials-container svg {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        padding: 40px 30px;
+    }
+
+    .our-services__container {
+        flex-direction: row;
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .our-services__service {
+        width: 31%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    :root {
+
+        --header-font-size: 48px;
+        --description-font-size: 17px;
+        --nav-font-size: 22px;
+    }
+
+    header {
+        background-position: top;
+        height: 80vh;
+    }
+
+    .toggle__menu {
+        display: none;
+    }
+
+    .nav__links {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0;
+        height: 100%;
+        gap: 40px;
+        width: 50%;
+        order: 2;
+        justify-content: space-between;
+    }
+
+    .nav__link:hover {
+        color: #A27B5C;
+    }
+
+    .nav__logo {
+        order: 1;
+        width: 150px;
+    }
+
+    .nav__logo img {
+        width: 100%
+    }
+
+    .nav__link-item {
+        text-align: center;
+    }
+
+    .nav__item--parent {
+        position: relative;
+    }
+
+    .nav__sublist {
+        display: block;
+        position: absolute;
+        top: 59%;
+        left: -30px;
+        padding: 20px 30px;
+        height: auto;
+    }
+
+    .nav__item--parent:hover>.nav__sublist {
+        display: block;
+        max-height: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .hero {
+        text-align: start;
+        align-items: start;
+    }
+
+    .hero__text-container {
+        max-width: 700px;
+    }
+
+    .hero__information-container {
+        margin-left: 40px;
+    }
+
+    .our-barber__opening-hours .our-barber__header {
+        font-size: 38px;
+    }
+
+    .our-barber__container {
+        align-items: start;
+    }
+
+    .our-barber__opening-hours {
+        padding: 50px 20px;
+    }
+
+    .our-barber__day-container {
+        font-size: 20px;
+    }
+
+    .price-list__buttons-container {
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .price-list__button {
+        font-size: 18px;
+    }
+
+    .price-list__name {
+        font-size: 18px;
+    }
+
+    .price-list__price {
+        font-size: 20px;
+    }
+
+    .price-list__box span::after {
+        content: ".....................................................";
+        position: absolute;
+        left: -750%;
+    }
+}
