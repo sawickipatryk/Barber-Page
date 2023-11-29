@@ -319,3 +319,45 @@ header {
     font-size: 20px;
     color: var(--first-color);
 }
+
+.our-services {
+    background-color: var(--first-background-color);
+    text-align: center;
+    color: var(--first-color);
+}
+
+.our-services__header span {
+    color: var(--third-color);
+}
+
+.our-services__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.our-services__service {
+    background-color: var(--second-color);
+}
+
+.our-services__text-container {
+    padding: 50px 15px;
+    height: 50%;
+}
+
+.our-services__img-container {
+    height: 50%;
+}
+
+.our-services__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-services__title {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
