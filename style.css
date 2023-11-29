@@ -181,10 +181,6 @@ header {
     width: 100%;
 }
 
-.nav__item--parent .nav__link {
-    width: 75%;
-}
-
 .nav__links .gold {
     background-color: var(--button-color);
 }
@@ -198,7 +194,7 @@ header {
     margin: 30px;
 }
 
-.nav__item--parent:hover>.nav__sublist {
+.nav__sublist.active {
     display: block;
     max-height: 200px;
     visibility: visible;
@@ -387,3 +383,11 @@ header {
 .footer__socials-container svg {
     margin-right: 30px;
 }
+
+/* desktop  */
+/* .nav__item--parent:hover>.nav__sublist {
+    display: block;
+    max-height: 200px;
+    visibility: visible;
+    opacity: 1;
+} */
