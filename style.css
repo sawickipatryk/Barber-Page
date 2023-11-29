@@ -345,19 +345,18 @@ header {
 
 .our-services__text-container {
     padding: 50px 15px;
-    height: 50%;
-}
-
-.our-services__img-container {
-    height: 50%;
-}
-
-.our-services__img {
-    height: 100%;
-    object-fit: cover;
 }
 
 .our-services__title {
     font-size: 24px;
     padding-bottom: 20px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos__img-second-row {
+    display: none;
 }
