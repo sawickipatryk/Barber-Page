@@ -551,6 +551,8 @@ header {
     .hero {
         text-align: start;
         align-items: start;
+        max-width: 1296px;
+        margin: 0 auto;
     }
 
     .hero__text-container {
