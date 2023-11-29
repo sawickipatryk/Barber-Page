@@ -360,3 +360,30 @@ header {
 .photos__img-second-row {
     display: none;
 }
+
+.footer {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+.footer__header {
+    font-weight: var(--font-medium);
+    font-size: 28px;
+    color: var(--third-color);
+    margin: 15px 0px;
+}
+
+.footer__navlink-item,
+.footer__city,
+.footer__postcode,
+.footer__tel {
+    margin-bottom: 10px;
+}
+
+.footer__socials-container svg {
+    margin-right: 30px;
+}
