@@ -516,6 +516,7 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
     }
 
     .nav__link-item {
+        border: 2px solid transparent;
         text-align: center;
     }
 
@@ -591,5 +592,16 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
         content: ".....................................................";
         position: absolute;
         left: -750%;
+    }
+
+    .nav__link-item-gold {
+        border: 2px solid #A27B5C;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+
+    .nav__link-item-gold:hover {
+        border: 2px solid #fff;
+        color: #A27B5C;
     }
 }
