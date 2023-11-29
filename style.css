@@ -303,7 +303,7 @@ header {
 
 .price-list__name {
     text-transform: uppercase;
-    font-weight: var(--font-medium);
+    font-weight: var(--font-regular);
 }
 
 .price-list__box span {
