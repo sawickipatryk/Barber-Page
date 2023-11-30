@@ -258,6 +258,7 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
 
 .our-barber__table-opening-hours {
     flex-direction: column;
+    align-items: normal;
     gap: 20px;
 }
 
