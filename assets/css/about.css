@@ -248,6 +248,14 @@ header :where(.nav__container, .nav__bar, .hero) {
     position: relative;
 }
 
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    grid-auto-columns: 100%;
+    overflow: hidden;
+}
+
 .card {
     display: flex;
     align-items: center;
@@ -316,8 +324,38 @@ header :where(.nav__container, .nav__bar, .hero) {
 }
 
 @media screen and (min-width:768px) {
-    .container {
-        padding: 35px 15px 35px 15px;
+    section {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .our-barber__content-container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .our-barber__right-container,
+    .our-barber__letft-container {
+        width: 50%;
+    }
+
+    .our-barber__letft-container {
+        order: initial;
+    }
+
+    .our-barber__img-container {
+        margin-bottom: 0;
+    }
+
+    .our-barber__description {
+        margin-bottom: 0;
+    }
+
+    .carousel {
+        grid-auto-columns: calc((100% / 2) - 6px);
     }
 
     .footer {
@@ -332,10 +370,26 @@ header :where(.nav__container, .nav__bar, .hero) {
 }
 
 @media screen and (min-width:1024px) {
-    .container {
-        padding: 40px 30px;
+    section {
+        padding: 40px 20px 30px 20px;
     }
 
+    .our-barber__img-container {
+        position: relative;
+        width: 388px;
+        z-index: 1;
+    }
+
+    .our-barber__img-container::after {
+        content: "";
+        position: absolute;
+        width: 388px;
+        height: 460px;
+        border: 3px solid #A27B5C;
+        top: -25px;
+        left: 25px;
+        z-index: -1;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -346,9 +400,8 @@ header :where(.nav__container, .nav__bar, .hero) {
         --nav-font-size: 22px;
     }
 
-    header {
-        background-position: top;
-        height: 80vh;
+    section {
+        padding: 60px 20px 50px 20px;
     }
 
     .toggle__menu {
@@ -415,5 +468,21 @@ header :where(.nav__container, .nav__bar, .hero) {
     .nav__link-item-gold:hover {
         border: 2px solid #fff;
         color: #A27B5C;
+    }
+
+    .our-barber__content-container {
+        flex-direction: row;
+        gap: 30px;
+        width: 100%
+    }
+
+    .our-barber__right-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel {
+        grid-auto-columns: calc((100% / 3) - 10px);
     }
 }
