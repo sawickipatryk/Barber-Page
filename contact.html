@@ -14,7 +14,7 @@
     >
     <link
         rel="stylesheet"
-        href="./assets/css/appointment.css"
+        href="./assets/css/contact.css"
     >
     <title>Appointment</title>
 </head>
@@ -106,61 +106,75 @@
 
         <div class="hero">
             <div class="hero__text-container">
-                <h1 class="hero__header header">APPOINTMENT</h1>
+                <h1 class="hero__header header">CONTACT</h1>
             </div>
         </div>
     </header>
     <main>
-        <section class="appointment">
-            <img
-                src="./assets/img/appointment.png"
-                alt="face with beard"
-            >
-            <div class="appointment__container">
-                <h2 class="appointment__header header">Ask For <span>Appointment</span></h2>
-                <p class="appointment__description description">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Molestiae, unde tempora doloremque
-                    asperiores modi ea dolorem quidem iusto voluptate nostrum.</p>
-                <div class="appointment__form-container">
-                    <form class="appointment__form">
-                        <input
-                            type="text"
-                            placeholder="Name"
-                            required
-                            autocomplete="off"
-                            class="appointment__input"
+        <section class="contact">
+            <div class="contact__container container">
+                <div class="contact__options-container">
+                    <div class="contact__option">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 24 24"
                         >
-                        <input
-                            type="tel"
-                            placeholder="Phone"
-                            required
-                            autocomplete="off"
-                            class="appointment__input"
+                            <path
+                                fill="currentColor"
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"
+                            />
+                        </svg>
+                        <div class="contact__text-container">
+                            <h5 class="contact__header">999-999-999</h5>
+                            <p>Call only in work hours</p>
+                        </div>
+                    </div>
+                    <div class="contact__option">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 24 24"
                         >
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            required
-                            autocomplete="off"
-                            class="appointment__input"
+                            <path
+                                fill="currentColor"
+                                d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"
+                            />
+                        </svg>
+                        <div class="contact__text-container">
+                            <h5 class="contact__header">STREET</h5>
+                            <p> 99-999 WARSAW </p>
+                        </div>
+                    </div>
+                    <div class="contact__option">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 24 24"
                         >
-                        <input
-                            type="datetime-local"
-                            placeholder="Appointment Date"
-                            required
-                            autocomplete="off"
-                            class="appointment__input"
-                        >
-                        <textarea
-                            class="appointment__textarea"
-                            autocomplete="off"
-                            required
-                            placeholder="Your Message"
-                            spellcheck="false"
-                        ></textarea>
-                        <button class="appointment__button button">SEND</button>
-                    </form>
+                            <path
+                                fill="currentColor"
+                                d="M18 4H2V2h16v2m-.5 9H16v5l3.61 2.16l.75-1.22l-2.86-1.69V13m6.5 4c0 3.87-3.13 7-7 7c-3.53 0-6.43-2.61-6.92-6H2v-6H1v-2l1-5h16l1 5v.29c2.89.87 5 3.54 5 6.71M4 16h6v-4H4v4m18 1c0-2.76-2.24-5-5-5s-5 2.24-5 5s2.24 5 5 5s5-2.24 5-5Z"
+                            />
+                        </svg>
+                        <div class="contact__text-container">
+                            <h5 class="contact__header">MON - FRI 8:00 - 16:00</h5>
+                            <p>SAT - SUN CLOSED</p>
+                        </div>
+                    </div>
                 </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.46656921325!2d20.896389928365576!3d52.233033477830986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1701380006165!5m2!1spl!2spl"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
         </section>
     </main>
@@ -245,7 +259,7 @@
             </div>
         </section>
     </footer>
-    <script src="./assets/js/appointment.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 
 </html>
