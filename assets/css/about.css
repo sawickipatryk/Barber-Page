@@ -274,6 +274,7 @@ header :where(.nav__container, .nav__bar, .hero) {
     height: 40px;
     border-radius: 50%;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 
 .arrow:first-child {
