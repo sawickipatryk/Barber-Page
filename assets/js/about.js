@@ -14,6 +14,7 @@ const navSublist = document.querySelector('.nav__sublist')
 console.log(navItemParent)
 
 navItemParent.addEventListener('click', () => {
+    if (window.innerWidth > 1200) return
     if (!navSublist.classList.contains('active')) {
         navSublist.classList.add('active')
         return

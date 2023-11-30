@@ -1,7 +1,10 @@
 const navLinks = document.querySelector('.nav__links')
 const toggleMenu = document.querySelector('.toggle__menu')
 
+console.log(window.innerWidth)
 toggleMenu.addEventListener('click', () => {
+
+
     if (!navLinks.classList.contains('active')) {
         navLinks.classList.add('active')
         return
@@ -11,9 +14,10 @@ toggleMenu.addEventListener('click', () => {
 
 const navItemParent = document.querySelector('.nav__item--parent')
 const navSublist = document.querySelector('.nav__sublist')
-console.log(navItemParent)
 
 navItemParent.addEventListener('click', () => {
+    if (window.innerWidth > 1200) return
+
     if (!navSublist.classList.contains('active')) {
         navSublist.classList.add('active')
         return
