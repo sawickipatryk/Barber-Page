@@ -220,6 +220,7 @@ header :where(.nav__container, .nav__bar, .hero) {
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: var(--first-background-color);
 }
 
 .gallery__container {
