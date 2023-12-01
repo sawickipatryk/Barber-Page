@@ -286,6 +286,10 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
     font-weight: var(--font-medium);
 }
 
+.price-list__button.active {
+    color: #A27B5C;
+}
+
 .price-list__price-list-container {
     flex-direction: column;
     width: 100%;
@@ -411,7 +415,7 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
 
     .price-list__price-list-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 25px;
