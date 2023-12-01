@@ -253,10 +253,27 @@ header :where(.nav__container, .nav__bar, .hero) {
     grid-auto-flow: column;
     gap: 12px;
     grid-auto-columns: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
 }
 
 .card {
+    user-select: none;
+    scroll-snap-align: start;
     display: flex;
     align-items: center;
     border: 2px solid #A27B5C;
