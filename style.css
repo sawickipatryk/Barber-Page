@@ -269,6 +269,7 @@ main :where(.our-barber__table-opening-hours, .photos, .our-barber__day-containe
 .priece-list {
     background-color: #3F4E4F;
     text-align: center;
+    min-height: 510px;
 }
 
 .price-list__buttons-container {
